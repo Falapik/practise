@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./swiper.min.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-info__burger">
+        <img class="search" src="./img/search.svg" alt="" />
+        <img class="burger" src="./img/burger.svg" alt="" />
+      </div>
+      <div class="header-info">
+        <div class="header-info__more">
+          <div class="header-info__more__cities">
+            <div class="header-info__more__cities__img">
+              <img src="./img/gps.svg" alt="" />
+            </div>
+            <div class="header-info__more__cities__text">Чита</div>
+          </div>
+          <div class="header-info__more__shops">
+            <div class="header-info__more__shops__img">
+              <img src="./img/store.svg" alt="" />
+            </div>
+            <div class="header-info__more__shops__text">Магазины</div>
+          </div>
+        </div>
+        <div class="header-info__feedback">
+          <div class="header-info__feedback__comm">Связаться с нами</div>
+          <div class="header-info__feedback__programm">Программа</div>
+          <div class="header-info__feedback__block">Блок</div>
+        </div>
+        <div class="header-info__lang">
+          <div class="header-info__lang__text">RU</div>
+          <div class="header-info__lang__icon">
+            <img src="./img/icon-arrow.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="header-main">
+        <div class="header-main__logo">
+          <div class="header-main__logo__logo">
+            <img src="./img/logo.svg" alt="" />
+          </div>
+          <div class="header-main__logo__aroma">
+            <img src="./img/aroma.svg" alt="" />
+          </div>
+        </div>
+        <div class="header-main__catalog">
+          <div class="header-main__catalog__icon">
+            <img src="./img/layers.svg" alt="" />
+          </div>
+          <div class="header-main__catalog__text">Каталог</div>
+        </div>
+        <div class="header-main__input">
+          <input
+            type="text"
+            placeholder="Найти"
+            class="header-main__input__main"
+          />
+        </div>
+        <div class="header-main__icons">
+          <a href="/menu-reg-log/index.html"
+            ><div class="header-main__icons__profile">
+              <div class="header-main__icons__profile__icon">
+                <img src="./img/profile.svg" alt="" />
+              </div>
+              <div class="header-main__icons__profile__text">Войти</div>
+            </div></a
+          >
+          <div class="header-main__icons__likes">
+            <div class="header-main__icons__likes__icon">
+              <img src="./img/like.svg" alt="" />
+            </div>
+            <div class="header-main__icons__likes__text">Избранные</div>
+          </div>
+          <div class="header-main__icons__backet">
+            <div class="header-main__icons__backet__icon">
+              <img src="./img/basket.svg" alt="" />
+            </div>
+            <div class="header-main__icons__backet__text">Корзина</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img class="swiper-slide" src="./img-jpg/main4.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide" src="./img-jpg/main2.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide" src="./img-jpg/main3.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide" src="./img-jpg/main4.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide" src="./img-jpg/main5.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide" src="./img/main-img.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide" src="./img/main-img.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide" src="./img-jpg/main3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="main-info">
+        <div class="tabs">
+          <div class="tab active" onclick="changeTab(0)">Бестеллеры</div>
+          <div class="tab" onclick="changeTab(1)">Ароматы</div>
+          <div class="tab" onclick="changeTab(2)">Стиль</div>
+        </div>
+        <div class="tab-content active" id="tab-content-0">
+          <div class="tab-contant__info-one">
+            <a href="/card-info/card.html"
+              ><img src="./img-jpg/first-aroma.jpg" alt=""
+            /></a>
+            <img src="./img/parf1.svg" alt="" />
+            <img src="./img-jpg/second-aroma.jpg" alt="" />
+          </div>
+        </div>
+        <div class="tab-content" id="tab-content-1">
+          <div class="tab-contant__info-two">
+            <img src="./img/parf2.svg" alt="" />
+            <img src="./img-jpg/four.jpg" alt="" />
+            <img src="./img-jpg/three1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="tab-content" id="tab-content-2">
+          <div class="tab-contant__info-three">
+            <img src="./img/parf3.svg" alt="" />
+            <img src="./img-jpg/seven.jpg" alt="" />
+            <img src="./img-jpg/five.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="main-new">
+        <div class="main-new__line1"></div>
+        <div class="main-new__text">Ассортимент</div>
+        <div class="main-new__line2"></div>
+      </div>
+      <div class="container">
+        <div class="picture-first">
+          <img src="./img/for-man.svg" alt="" />
+        </div>
+        <div class="picture-second">
+          <img src="./img/for-woman.svg" alt="" />
+        </div>
+        <div class="picture-third">
+          <img src="./img/for-dogs.svg" alt="" />
+        </div>
+        <div class="picture-four">
+          <img src="./img/for-cars.svg" alt="" />
+        </div>
+        <div class="picture-five">
+          <img src="./img/for-kids.svg" alt="" />
+        </div>
+      </div>
+      <div class="main-new">
+        <div class="main-new__line1"></div>
+        <div class="main-new__text">Недавние покупки</div>
+        <div class="main-new__line2"></div>
+      </div>
+      <div class="sort-text">Мужской парфюм</div>
+      <div class="sort-container1">
+        <div class="sort-container__card">
+          <div class="sort-container__card-info">
+            <div class="sort-container__card-info-text">
+              Hugo Boss "№6" for men 100 ml
+            </div>
+            <div class="sort-container__card-info-img">
+              <img src="./img/star.svg" alt="" />
+            </div>
+            <div class="line"></div>
+            <div class="card-info">
+              <div class="price">900$</div>
+              <div class="buy">
+                <div class="buy-basket">
+                  <img src="./img/basket-little.svg" alt="" />
+                </div>
+                <div class="buy-text">Купить</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sort-container1">
+        <a href="/card-info/card.html">
+          <div
+            class="sort-container__card"
+            style="
+              background-image: url(./img-jpg/no.jpg);
+              background-repeat: no-repeat;
+              background-position: center;
+            "
+          >
+            <div class="sort-container__card-info">
+              <div class="sort-container__card-info-text">
+                Hugo Boss "№6" for men 100 ml
+              </div>
+              <div class="sort-container__card-info-img">
+                <img src="./img/star.svg" alt="" />
+              </div>
+              <div class="line"></div>
+              <div class="card-info">
+                <div class="price">900$</div>
+                <div class="buy">
+                  <div class="buy-basket">
+                    <img src="./img/basket-little.svg" alt="" />
+                  </div>
+                  <div class="buy-text">Купить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="sort-container1">
+        <div
+          class="sort-container__card"
+          style="
+            background-image: url(./img-jpg/nope.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+          "
+        >
+          <div class="sort-container__card-info">
+            <div class="sort-container__card-info-text">
+              Hugo Boss "№6" for men 100 ml
+            </div>
+            <div class="sort-container__card-info-img">
+              <img src="./img/star.svg" alt="" />
+            </div>
+            <div class="line"></div>
+            <div class="card-info">
+              <div class="price">900$</div>
+              <div class="buy">
+                <div class="buy-basket">
+                  <img src="./img/basket-little.svg" alt="" />
+                </div>
+                <div class="buy-text">Купить</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sort-container1">
+        <div class="sort-container__card">
+          <div class="sort-container__card-info">
+            <div class="sort-container__card-info-text">
+              Hugo Boss "№6" for men 100 ml
+            </div>
+            <div class="sort-container__card-info-img">
+              <img src="./img/star.svg" alt="" />
+            </div>
+            <div class="line"></div>
+            <div class="card-info">
+              <div class="price">900$</div>
+              <div class="buy">
+                <div class="buy-basket">
+                  <img src="./img/basket-little.svg" alt="" />
+                </div>
+                <div class="buy-text">Купить</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-sort">
+        <div class="sort-container">
+          <div class="sort-container__card">
+            <div class="sort-container__card-info">
+              <div class="sort-container__card-info-text">
+                Hugo Boss "№6" for men 100 ml
+              </div>
+              <div class="sort-container__card-info-img">
+                <img src="./img/star.svg" alt="" />
+              </div>
+              <div class="line"></div>
+              <div class="card-info">
+                <div class="price">900$</div>
+                <div class="buy">
+                  <div class="buy-basket">
+                    <img src="./img/basket-little.svg" alt="" />
+                  </div>
+                  <div class="buy-text">Купить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sort-container">
+          <div
+            class="sort-container__card"
+            style="
+              background-image: url(./img-jpg/nope.jpg);
+              background-repeat: no-repeat;
+              background-position: center;
+            "
+          >
+            <div class="sort-container__card-info">
+              <div class="sort-container__card-info-text">
+                Hugo Boss "№6" for men 100 ml
+              </div>
+              <div class="sort-container__card-info-img">
+                <img src="./img/star.svg" alt="" />
+              </div>
+              <div class="line"></div>
+              <div class="card-info">
+                <div class="price">900$</div>
+                <div class="buy">
+                  <div class="buy-basket">
+                    <img src="./img/basket-little.svg" alt="" />
+                  </div>
+                  <div class="buy-text">Купить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-sort">
+        <a href="/card-info/card.html"
+          ><div class="sort-container">
+            <div
+              class="sort-container__card"
+              style="
+                background-image: url(./img-jpg/no.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+              "
+            >
+              <div class="sort-container__card-info">
+                <div class="sort-container__card-info-text">
+                  Hugo Boss "№6" for men 100 ml
+                </div>
+                <div class="sort-container__card-info-img">
+                  <img src="./img/star.svg" alt="" />
+                </div>
+                <div class="line"></div>
+                <div class="card-info">
+                  <div class="price">900$</div>
+                  <div class="buy">
+                    <div class="buy-basket">
+                      <img src="./img/basket-little.svg" alt="" />
+                    </div>
+                    <div class="buy-text">Купить</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div></a
+        >
+        <div class="sort-container">
+          <div class="sort-container__card">
+            <div class="sort-container__card-info">
+              <div class="sort-container__card-info-text">
+                Hugo Boss "№6" for men 100 ml
+              </div>
+              <div class="sort-container__card-info-img">
+                <img src="./img/star.svg" alt="" />
+              </div>
+              <div class="line"></div>
+              <div class="card-info">
+                <div class="price">900$</div>
+                <div class="buy">
+                  <div class="buy-basket">
+                    <img src="./img/basket-little.svg" alt="" />
+                  </div>
+                  <div class="buy-text">Купить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-more">
+        <div class="show-more__line"></div>
+        <div class="show-more__btn">
+          <button class="btn-more">Посмотреть еще</button>
+        </div>
+        <div class="show-more__line"></div>
+      </div>
+      <div class="sort-text">Женский парфюм</div>
+      <div class="sort-container1">
+        <div class="sort-container__card">
+          <div class="sort-container__card-info">
+            <div class="sort-container__card-info-text">
+              Hugo Boss "№6" for men 100 ml
+            </div>
+            <div class="sort-container__card-info-img">
+              <img src="./img/star.svg" alt="" />
+            </div>
+            <div class="line"></div>
+            <div class="card-info">
+              <div class="price">900$</div>
+              <div class="buy">
+                <div class="buy-basket">
+                  <img src="./img/basket-little.svg" alt="" />
+                </div>
+                <div class="buy-text">Купить</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sort-container1">
+        <div class="sort-container__card">
+          <div class="sort-container__card-info">
+            <div class="sort-container__card-info-text">
+              Hugo Boss "№6" for men 100 ml
+            </div>
+            <div class="sort-container__card-info-img">
+              <img src="./img/star.svg" alt="" />
+            </div>
+            <div class="line"></div>
+            <div class="card-info">
+              <div class="price">900$</div>
+              <div class="buy">
+                <div class="buy-basket">
+                  <img src="./img/basket-little.svg" alt="" />
+                </div>
+                <div class="buy-text">Купить</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sort-container1">
+        <div class="sort-container__card">
+          <div class="sort-container__card-info">
+            <div class="sort-container__card-info-text">
+              Hugo Boss "№6" for men 100 ml
+            </div>
+            <div class="sort-container__card-info-img">
+              <img src="./img/star.svg" alt="" />
+            </div>
+            <div class="line"></div>
+            <div class="card-info">
+              <div class="price">900$</div>
+              <div class="buy">
+                <div class="buy-basket">
+                  <img src="./img/basket-little.svg" alt="" />
+                </div>
+                <div class="buy-text">Купить</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sort-container1">
+        <div class="sort-container__card">
+          <div class="sort-container__card-info">
+            <div class="sort-container__card-info-text">
+              Hugo Boss "№6" for men 100 ml
+            </div>
+            <div class="sort-container__card-info-img">
+              <img src="./img/star.svg" alt="" />
+            </div>
+            <div class="line"></div>
+            <div class="card-info">
+              <div class="price">900$</div>
+              <div class="buy">
+                <div class="buy-basket">
+                  <img src="./img/basket-little.svg" alt="" />
+                </div>
+                <div class="buy-text">Купить</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-sort">
+        <div class="sort-container">
+          <div class="sort-container__card">
+            <div class="sort-container__card-info">
+              <div class="sort-container__card-info-text">
+                Hugo Boss "№6" for men 100 ml
+              </div>
+              <div class="sort-container__card-info-img">
+                <img src="./img/star.svg" alt="" />
+              </div>
+              <div class="line"></div>
+              <div class="card-info">
+                <div class="price">900$</div>
+                <div class="buy">
+                  <div class="buy-basket">
+                    <img src="./img/basket-little.svg" alt="" />
+                  </div>
+                  <div class="buy-text">Купить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sort-container">
+          <div class="sort-container__card">
+            <div class="sort-container__card-info">
+              <div class="sort-container__card-info-text">
+                Hugo Boss "№6" for men 100 ml
+              </div>
+              <div class="sort-container__card-info-img">
+                <img src="./img/star.svg" alt="" />
+              </div>
+              <div class="line"></div>
+              <div class="card-info">
+                <div class="price">900$</div>
+                <div class="buy">
+                  <div class="buy-basket">
+                    <img src="./img/basket-little.svg" alt="" />
+                  </div>
+                  <div class="buy-text">Купить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-sort">
+        <div class="sort-container">
+          <div class="sort-container__card">
+            <div class="sort-container__card-info">
+              <div class="sort-container__card-info-text">
+                Hugo Boss "№6" for men 100 ml
+              </div>
+              <div class="sort-container__card-info-img">
+                <img src="./img/star.svg" alt="" />
+              </div>
+              <div class="line"></div>
+              <div class="card-info">
+                <div class="price">900$</div>
+                <div class="buy">
+                  <div class="buy-basket">
+                    <img src="./img/basket-little.svg" alt="" />
+                  </div>
+                  <div class="buy-text">Купить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sort-container">
+          <div class="sort-container__card">
+            <div class="sort-container__card-info">
+              <div class="sort-container__card-info-text">
+                Hugo Boss "№6" for men 100 ml
+              </div>
+              <div class="sort-container__card-info-img">
+                <img src="./img/star.svg" alt="" />
+              </div>
+              <div class="line"></div>
+              <div class="card-info">
+                <div class="price">900$</div>
+                <div class="buy">
+                  <div class="buy-basket">
+                    <img src="./img/basket-little.svg" alt="" />
+                  </div>
+                  <div class="buy-text">Купить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-more">
+        <div class="show-more__line"></div>
+        <div class="show-more__btn">
+          <button class="btn-more">Посмотреть еще</button>
+        </div>
+        <div class="show-more__line"></div>
+      </div>
+      <div class="sort-text">Детский парфюм</div>
+      <div class="container-sort">
+        <div class="sort-container">
+          <div class="sort-container__card">
+            <div class="sort-container__card-info">
+              <div class="sort-container__card-info-text">
+                Hugo Boss "№6" for men 100 ml
+              </div>
+              <div class="sort-container__card-info-img">
+                <img src="./img/star.svg" alt="" />
+              </div>
+              <div class="line"></div>
+              <div class="card-info">
+                <div class="price">900$</div>
+                <div class="buy">
+                  <div class="buy-basket">
+                    <img src="./img/basket-little.svg" alt="" />
+                  </div>
+                  <div class="buy-text">Купить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sort-container">
+          <div class="sort-container__card">
+            <div class="sort-container__card-info">
+              <div class="sort-container__card-info-text">
+                Hugo Boss "№6" for men 100 ml
+              </div>
+              <div class="sort-container__card-info-img">
+                <img src="./img/star.svg" alt="" />
+              </div>
+              <div class="line"></div>
+              <div class="card-info">
+                <div class="price">900$</div>
+                <div class="buy">
+                  <div class="buy-basket">
+                    <img src="./img/basket-little.svg" alt="" />
+                  </div>
+                  <div class="buy-text">Купить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-sort">
+        <div class="sort-container">
+          <div class="sort-container__card">
+            <div class="sort-container__card-info">
+              <div class="sort-container__card-info-text">
+                Hugo Boss "№6" for men 100 ml
+              </div>
+              <div class="sort-container__card-info-img">
+                <img src="./img/star.svg" alt="" />
+              </div>
+              <div class="line"></div>
+              <div class="card-info">
+                <div class="price">900$</div>
+                <div class="buy">
+                  <div class="buy-basket">
+                    <img src="./img/basket-little.svg" alt="" />
+                  </div>
+                  <div class="buy-text">Купить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sort-container">
+          <div class="sort-container__card">
+            <div class="sort-container__card-info">
+              <div class="sort-container__card-info-text">
+                Hugo Boss "№6" for men 100 ml
+              </div>
+              <div class="sort-container__card-info-img">
+                <img src="./img/star.svg" alt="" />
+              </div>
+              <div class="line"></div>
+              <div class="card-info">
+                <div class="price">900$</div>
+                <div class="buy">
+                  <div class="buy-basket">
+                    <img src="./img/basket-little.svg" alt="" />
+                  </div>
+                  <div class="buy-text">Купить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sort-container1">
+        <div class="sort-container__card">
+          <div class="sort-container__card-info">
+            <div class="sort-container__card-info-text">
+              Hugo Boss "№6" for men 100 ml
+            </div>
+            <div class="sort-container__card-info-img">
+              <img src="./img/star.svg" alt="" />
+            </div>
+            <div class="line"></div>
+            <div class="card-info">
+              <div class="price">900$</div>
+              <div class="buy">
+                <div class="buy-basket">
+                  <img src="./img/basket-little.svg" alt="" />
+                </div>
+                <div class="buy-text">Купить</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sort-container1">
+        <div class="sort-container__card">
+          <div class="sort-container__card-info">
+            <div class="sort-container__card-info-text">
+              Hugo Boss "№6" for men 100 ml
+            </div>
+            <div class="sort-container__card-info-img">
+              <img src="./img/star.svg" alt="" />
+            </div>
+            <div class="line"></div>
+            <div class="card-info">
+              <div class="price">900$</div>
+              <div class="buy">
+                <div class="buy-basket">
+                  <img src="./img/basket-little.svg" alt="" />
+                </div>
+                <div class="buy-text">Купить</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sort-container1">
+        <div class="sort-container__card">
+          <div class="sort-container__card-info">
+            <div class="sort-container__card-info-text">
+              Hugo Boss "№6" for men 100 ml
+            </div>
+            <div class="sort-container__card-info-img">
+              <img src="./img/star.svg" alt="" />
+            </div>
+            <div class="line"></div>
+            <div class="card-info">
+              <div class="price">900$</div>
+              <div class="buy">
+                <div class="buy-basket">
+                  <img src="./img/basket-little.svg" alt="" />
+                </div>
+                <div class="buy-text">Купить</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sort-container1">
+        <div class="sort-container__card">
+          <div class="sort-container__card-info">
+            <div class="sort-container__card-info-text">
+              Hugo Boss "№6" for men 100 ml
+            </div>
+            <div class="sort-container__card-info-img">
+              <img src="./img/star.svg" alt="" />
+            </div>
+            <div class="line"></div>
+            <div class="card-info">
+              <div class="price">900$</div>
+              <div class="buy">
+                <div class="buy-basket">
+                  <img src="./img/basket-little.svg" alt="" />
+                </div>
+                <div class="buy-text">Купить</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-more">
+        <div class="show-more__line"></div>
+        <div class="show-more__btn">
+          <button class="btn-more">Посмотреть еще</button>
+        </div>
+        <div class="show-more__line"></div>
+      </div>
+      <div class="search-input">
+        <input
+          class="search-info"
+          type="text"
+          placeholder="Не смогли найти, что хотели? Найдем."
+        />
+      </div>
+      <div class="nearly-buys">Недавние покупки</div>
+      <div class="swiper-second">
+        <div class="rect">
+          <img class="rect-information" src="./img/for-kids2.svg" alt="" />
+          <div class="rect-text">
+            <div class="rect-text__name">Hugo Boss "№6" for men 100 ml</div>
+            <div class="rect-text__dist">Hugo Boss</div>
+          </div>
+        </div>
+        <div class="rect">
+          <img class="rect-information" src="./img-jpg/for1.jpg" alt="" />
+          <div class="rect-text">
+            <div class="rect-text__name">Hugo Boss "№6" for men 100 ml</div>
+            <div class="rect-text__dist">Hugo Boss</div>
+          </div>
+        </div>
+        <div class="rect">
+          <img class="rect-information" src="./img-jpg/for2.jpg" alt="" />
+          <div class="rect-text">
+            <div class="rect-text__name">Hugo Boss "№6" for men 100 ml</div>
+            <div class="rect-text__dist">Hugo Boss</div>
+          </div>
+        </div>
+        <div class="rect">
+          <img class="rect-information" src="./img/for-kids2.svg" alt="" />
+          <div class="rect-text">
+            <div class="rect-text__name">Hugo Boss "№6" for men 100 ml</div>
+            <div class="rect-text__dist">Hugo Boss</div>
+          </div>
+        </div>
+        <div class="rect">
+          <img class="rect-information" src="./img-jpg/for3.jpg" alt="" />
+          <div class="rect-text">
+            <div class="rect-text__name">Hugo Boss "№6" for men 100 ml</div>
+            <div class="rect-text__dist">Hugo Boss</div>
+          </div>
+        </div>
+        <div class="rect">
+          <img class="rect-information" src="./img/for-kids2.svg" alt="" />
+          <div class="rect-text">
+            <div class="rect-text__name">Hugo Boss "№6" for men 100 ml</div>
+            <div class="rect-text__dist">Hugo Boss</div>
+          </div>
+        </div>
+        <div class="rect">
+          <img class="rect-information" src="./img-jpg/for1.jpg" alt="" />
+          <div class="rect-text">
+            <div class="rect-text__name">Hugo Boss "№6" for men 100 ml</div>
+            <div class="rect-text__dist">Hugo Boss</div>
+          </div>
+        </div>
+      </div>
+      <div class="main-rew">
+        <h5>Остались вопросы?</h5>
+      </div>
+      <div class="main-feed">
+        <div class="main-feed__maintext">
+          Купите и получите полную консультацию
+        </div>
+        <div class="main-feed__line"></div>
+        <div class="main-feed__moreinfo">
+          <div class="main-feed__moreinfo-container">
+            <div class="main-feed__moreinfo-write">Напишите на почту</div>
+            <div class="main-feed__moreinfo-email">tralalala@gmail.com</div>
+            <div class="main-feed__moreinfo-feedback">
+              <button class="btn">Свяжитесь с нами</button>
+            </div>
+          </div>
+          <div class="main-feed__moreinfo-phone">
+            <div class="main-feed__moreinfo-phone-text">
+              Позвоните по телефону
+            </div>
+            <div class="main-feed__moreinfo-phone-phone">+7 999 123 12 12</div>
+            <div class="main-feed__moreinfo-phone-img">
+              <img src="./img/vk.svg" alt="" />
+              <img src="./img/fb.svg" alt="" />
+              <img src="./img/tg.svg" alt="" />
+              <img src="./img/insta.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-main">
+          <div class="footer-main__text">Только оригинальная продукция</div>
+          <div class="footer-main__text">Только оригинальная продукция</div>
+          <div class="footer-main__text">Только оригинальная продукция</div>
+          <div class="footer-main__text">Только оригинальная продукция</div>
+          <div class="cont-info">
+            <div class="footer-main__text2">Только оригинальная продукция</div>
+            <div class="footer-main__text2">Только оригинальная продукция</div>
+          </div>
+        </div>
+        <div class="footer-dop">
+          <div class="footer-dop__logo">
+            <div class="footer-dop__logo-info">
+              <div class="footer-dop__logo-info-img">
+                <img src="./img/logo-white.svg" alt="" />
+              </div>
+              <div class="footer-dop__logo-info-text">
+                <img src="./img/aroma-white.svg" alt="" />
+              </div>
+            </div>
+            <div class="footer-dop__text">
+              2016-2024 Интернет-магазин парфюмерии Aroma Delight
+            </div>
+          </div>
+          <div class="footer-dop__info">
+            <div class="footer-dop__info-head-one">
+              О магазине
+              <div class="footer-dop__info-head-one-more">
+                <p>Доставка</p>
+                <p>Оплата</p>
+                <p>Шопинг</p>
+                <p>Доп. услуги</p>
+                <p>Промо</p>
+                <p>Адреса</p>
+              </div>
+            </div>
+            <div class="footer-dop__info-head-two">
+              Каталог
+              <div class="footer-dop__info-head-two-more">
+                <p>Мужчинам</p>
+                <p>Женщинам</p>
+                <p>Собакам</p>
+                <p>Машинам</p>
+                <p>Детям</p>
+                <p>Подросткам</p>
+              </div>
+            </div>
+            <div class="footer-dop__info-head-three">
+              Возникли вопросы?
+              <div class="footer-dop__info-head-three-more">
+                <p>89242992321</p>
+                <p>ул. Анохина д.34</p>
+                <p>9:00 - 22:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-near">© All rights reserved</div>
+      </div>
+    </footer>
+
+    <script src="./swiper.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
